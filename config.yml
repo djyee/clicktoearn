@@ -1,0 +1,68 @@
+MySQL:
+  hostname: mysql hostname
+  port: 3306
+  database: mysql database name
+  username: mysql username
+  password: mysql pass
+link-tl-activate: false
+Links:
+  L1:
+    C1: Ads 1 link here
+    C2: Ads 2 link here
+    C3: Ads 3 link here
+    C4: Ads 4 link here
+    C5: Ads 5 link here
+  L2:
+    C1: Ads 1 link here
+    C2: Ads 2 link here
+    C3: Ads 3 link here
+    C4: Ads 4 link here
+    C5: Ads 5 link here
+  L3:
+    C1: Ads 1 link here
+    C2: Ads 2 link here
+    C3: Ads 3 link here
+    C4: Ads 4 link here
+    C5: Ads 5 link here
+  L4:
+    C1: Ads 1 link here
+    C2: Ads 2 link here
+    C3: Ads 3 link here
+    C4: Ads 4 link here
+    C5: Ads 5 link here    
+  L5:
+    C1: Ads 1 link here
+    C2: Ads 2 link here
+    C3: Ads 3 link here
+    C4: Ads 4 link here
+    C5: Ads 5 link here 
+  L6:
+    C1: Ads 1 link here
+    C2: Ads 2 link here
+    C3: Ads 3 link here
+    C4: Ads 4 link here
+    C5: Ads 5 link here  
+  L7:
+    C1: Ads 1 link here
+    C2: Ads 2 link here
+    C3: Ads 3 link here
+    C4: Ads 4 link here
+    C5: Ads 5 link here    
+  L8:
+    C1: Ads 1 link here
+    C2: Ads 2 link here
+    C3: Ads 3 link here
+    C4: Ads 4 link here
+    C5: Ads 5 link here  
+  L9:
+    C1: Ads 1 link here
+    C2: Ads 2 link here
+    C3: Ads 3 link here
+    C4: Ads 4 link here
+    C5: Ads 5 link here   
+  L10:
+    C1: Ads 1 link here
+    C2: Ads 2 link here
+    C3: Ads 3 link here
+    C4: Ads 4 link here
+    C5: Ads 5 link here            
