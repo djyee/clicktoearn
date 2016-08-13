@@ -37,24 +37,19 @@ import simple.brainsynder.api.ParticleMaker;
 import simple.brainsynder.exceptions.MissingParticleException;
 
 
-//70 tiklama spawner
-//10 tiklama supriz sandik 
-//50 tiklama 3 ultra supriz sandik
-
-//All Rights Reserved
-
-
 public final class pay extends JavaPlugin
   implements Listener
 {
      
   public void onEnable()
   {
-
-
-
+//Feel Free to Chance code and use :) but please dont forget the original creator 
+//Kodu değiştirip Kullanmakta Çekinmeyin Ama Lütfen Eklentinin Orjinal Yapimcisini Unutmayin :)
+//creator: djyee (The Noob Coder)
+//Yapimci: djyee (Acemi Kodlayici)	  
+	  
     try {
-      Connection connection = DriverManager.getConnection("jdbc:mysql://" + hostname + "/"
+      Connection connection = DriverManager.getConnection("jdbc:mysql://"+hostname+"/"
       + database, username, password);
 DatabaseMetaData metadata = connection.getMetaData();
 ResultSet resultSet;
@@ -66,7 +61,7 @@ resultSet = metadata.getColumns(null, null, "clickandearn", null);
       }else{
          try {
   Connection connection1;
-  connection1 = DriverManager.getConnection("jdbc:mysql://" + hostname + "/"
+  connection1 = DriverManager.getConnection("jdbc:mysql://"+hostname+"/"
           + database, username, password);
   Statement s4 = connection1.createStatement();
   s4.executeUpdate("CREATE TABLE clickandearn" +
@@ -168,7 +163,6 @@ public void saveDefaultConfig() {
         String link3_4 = getConfig().getString("Links.L3.C4");
         String link3_5 = getConfig().getString("Links.L3.C5"); 
 
-        String utf8 = "?useUnicode=true&characterEncoding=UTF-8";
         
      public static Inventory tikla = Bukkit.createInventory(null, 45, ChatColor.GREEN +"Tıkla Kazan!");
      
@@ -333,7 +327,7 @@ public boolean inlinenotclickedlink(Player player,int ChestNo ,String Linkno, St
     if (cmd.getName().equalsIgnoreCase("tiklakazan")){
       
       try {
-        Connection connection = DriverManager.getConnection("jdbc:mysql://" + hostname + "/"
+        Connection connection = DriverManager.getConnection("jdbc:mysql://"+hostname+"/"
         + database, username, password);
         Statement s41 = connection.createStatement();
   ResultSet resultSet;
@@ -351,7 +345,7 @@ public boolean inlinenotclickedlink(Player player,int ChestNo ,String Linkno, St
            try {
         connection.close();
     Connection connection1;
-    connection1 = DriverManager.getConnection("jdbc:mysql://" + hostname + "/"
+    connection1 = DriverManager.getConnection("jdbc:mysql://"+hostname+"/"
             + database, username, password);
     Statement s4 = connection1.createStatement();
 
@@ -374,7 +368,7 @@ public boolean inlinenotclickedlink(Player player,int ChestNo ,String Linkno, St
      ResultSet resultSet565 = null;
     Connection connection = null;
     try {
-      connection = DriverManager.getConnection("jdbc:mysql://" + hostname + "/"
+      connection = DriverManager.getConnection("jdbc:mysql://"+hostname+"/"
               + database, username, password);
       Statement s4113 = connection.createStatement(); 
     String ip2 = p.getAddress().getAddress().getHostAddress();
@@ -393,7 +387,7 @@ public boolean inlinenotclickedlink(Player player,int ChestNo ,String Linkno, St
     	  try {
     		  
               Connection connection123;
-              connection123 = DriverManager.getConnection("jdbc:mysql://" + hostname + "/"
+              connection123 = DriverManager.getConnection("jdbc:mysql://"+hostname+"/"
                       + database, username, password);
               Statement s42 = connection123.createStatement();
               Statement s43 = connection123.createStatement();
@@ -425,7 +419,7 @@ public boolean inlinenotclickedlink(Player player,int ChestNo ,String Linkno, St
     
      try {
           String ip1 = p.getAddress().getAddress().getHostAddress();
-          Connection connection12 = DriverManager.getConnection("jdbc:mysql://" + hostname + "/"
+          Connection connection12 = DriverManager.getConnection("jdbc:mysql://"+hostname+"/"
           + database, username, password);
           Statement s41 = connection12.createStatement();
           Statement s42 = connection12.createStatement();
@@ -690,13 +684,15 @@ Random dice1 = new Random();
     	  try {
     			
               Connection connection123;
-              connection123 = DriverManager.getConnection("jdbc:mysql://" + hostname + "/"
+              connection123 = DriverManager.getConnection("jdbc:mysql://"+hostname+"/"
                       + database, username, password);
               Statement s42 = connection123.createStatement();
               
               String ip2 = player.getAddress().getAddress().getHostAddress();
               if(getConfig().getBoolean("link-tl-activate") == true){
-            	 String R1 =  d1.replaceAll("http://link.tl/", "http://link.tl/fly/go.php?to=");
+            	 String R11 =  d1.replaceAll("http://link.tl/", "http://link.tl/fly/go.php?to=");
+            	 String R1 =  R11.replaceAll("http://ouo.io/", "http://ouo.io/go/");
+
             	  s42.executeUpdate("UPDATE clickandearn SET link = '"+R1+"' WHERE ipadress= '"+ip2+"';");
 
               }else{
@@ -721,12 +717,13 @@ Random dice1 = new Random();
     	  try {
     			
               Connection connection123;
-              connection123 = DriverManager.getConnection("jdbc:mysql://" + hostname + "/"
+              connection123 = DriverManager.getConnection("jdbc:mysql://"+hostname+"/"
                       + database, username, password);
               Statement s42 = connection123.createStatement();
               String ip2 = player.getAddress().getAddress().getHostAddress();
               if(getConfig().getBoolean("link-tl-activate") == true){
-            	 String R1 =  d2.replaceAll("http://link.tl/", "http://link.tl/fly/go.php?to=");
+             	 String R11 =  d2.replaceAll("http://link.tl/", "http://link.tl/fly/go.php?to=");
+             	 String R1 =  R11.replaceAll("http://ouo.io/", "http://ouo.io/go/");
             	  s42.executeUpdate("UPDATE clickandearn SET link = '"+R1+"' WHERE ipadress= '"+ip2+"';");
 
               }else{
@@ -747,13 +744,14 @@ Random dice1 = new Random();
     try {
     			
               Connection connection123;
-              connection123 = DriverManager.getConnection("jdbc:mysql://" + hostname + "/"
+              connection123 = DriverManager.getConnection("jdbc:mysql://"+hostname+"/"
                       + database, username, password);
               Statement s42 = connection123.createStatement();
               
               String ip2 = player.getAddress().getAddress().getHostAddress();
               if(getConfig().getBoolean("link-tl-activate") == true){
-            	 String R1 =  d3.replaceAll("http://link.tl/", "http://link.tl/fly/go.php?to=");
+             	 String R11 =  d3.replaceAll("http://link.tl/", "http://link.tl/fly/go.php?to=");
+             	 String R1 =  R11.replaceAll("http://ouo.io/", "http://ouo.io/go/");
             	  s42.executeUpdate("UPDATE clickandearn SET link = '"+R1+"' WHERE ipadress= '"+ip2+"';");
 
               }else{
@@ -774,13 +772,14 @@ Random dice1 = new Random();
     	  try {
     		  
               Connection connection123;
-              connection123 = DriverManager.getConnection("jdbc:mysql://" + hostname + "/"
+              connection123 = DriverManager.getConnection("jdbc:mysql://"+hostname+"/"
                       + database, username, password);
               Statement s42 = connection123.createStatement();
               
               String ip2 = player.getAddress().getAddress().getHostAddress();
               if(getConfig().getBoolean("link-tl-activate") == true){
-            	 String R1 =  d4.replaceAll("http://link.tl/", "http://link.tl/fly/go.php?to=");
+             	 String R11 =  d4.replaceAll("http://link.tl/", "http://link.tl/fly/go.php?to=");
+             	 String R1 =  R11.replaceAll("http://ouo.io/", "http://ouo.io/go/");
             	  s42.executeUpdate("UPDATE clickandearn SET link = '"+R1+"' WHERE ipadress= '"+ip2+"';");
 
               }else{
@@ -799,13 +798,14 @@ Random dice1 = new Random();
     	  try {
     		  
               Connection connection123;
-              connection123 = DriverManager.getConnection("jdbc:mysql://" + hostname + "/"
+              connection123 = DriverManager.getConnection("jdbc:mysql://"+hostname+"/"
                       + database, username, password);
               Statement s42 = connection123.createStatement();
               
               String ip2 = player.getAddress().getAddress().getHostAddress();
               if(getConfig().getBoolean("link-tl-activate") == true){
-            	 String R1 =  d5.replaceAll("http://link.tl/", "http://link.tl/fly/go.php?to=");
+             	 String R11 =  d5.replaceAll("http://link.tl/", "http://link.tl/fly/go.php?to=");
+             	 String R1 =  R11.replaceAll("http://ouo.io/", "http://ouo.io/go/");
             	  s42.executeUpdate("UPDATE clickandearn SET link = '"+R1+"' WHERE ipadress= '"+ip2+"';");
 
               }else{
