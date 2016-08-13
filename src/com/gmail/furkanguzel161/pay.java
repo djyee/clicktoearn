@@ -45,7 +45,7 @@ public final class pay extends JavaPlugin
   {
 //Feel Free to Chance code and use :) but please dont forget the original creator 
 //Kodu değiştirip Kullanmakta Çekinmeyin Ama Lütfen Eklentinin Orjinal Yapimcisini Unutmayin :)
-//creator: djyee (The Noob Coder)
+//Creator: djyee (The Noob Coder)
 //Yapimci: djyee (Acemi Kodlayici)	  
 	  
     try {
